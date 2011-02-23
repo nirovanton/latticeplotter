@@ -21,12 +21,12 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <stdlib.h>
 #include <math.h>
 
-#include "newgraph/view3d.h"
-#include "newgraph/mydraw.h"
-#include "newgraph/koord3d.h"
-#include "newgraph/objects3d.h"
-#include "newgraph/mygraph.h"
-#include "newgraph/draw3dgraph.h"
+#include "graph/view3d.h"
+#include "graph/mydraw.h"
+#include "graph/koord3d.h"
+#include "graph/objects3d.h"
+#include "graph/mygraph.h"
+#include "graph/draw3dgraph.h"
 
 #define maxgraphs 20
 

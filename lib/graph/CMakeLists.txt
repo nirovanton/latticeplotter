@@ -1,4 +1,4 @@
-add_library(newgraph SHARED 
+add_library(graph SHARED 
     analyse.c
     cobject3d.c
     color.c
@@ -24,4 +24,4 @@ add_library(newgraph SHARED
     vector.c
     view3d.c
 )
-target_link_libraries(newgraph X11)
+target_link_libraries(graph X11)

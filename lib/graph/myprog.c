@@ -25,8 +25,8 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 
 #include <math.h>
 #include <unistd.h>
-#include "newgraph/mygraph.h"
-#include "newgraph/color.h"
+#include "graph/mygraph.h"
+#include "graph/color.h"
 
 #define onedim 200
 #define onedim2 250

@@ -20,8 +20,8 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 \***************************************************************************/
 
 #include <math.h>
-#include "newgraph/mydraw_2d.h"
-#include "newgraph/ufield.h"
+#include "graph/mydraw_2d.h"
+#include "graph/ufield.h"
 
 void ufield(int anzy,int xmin, int xmax, int ymin, int ymax,
 	    double *u,double scale,

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <math.h>
-#include "newgraph/color.h"
-#include "newgraph/mydraw_2d.h"
+#include "graph/color.h"
+#include "graph/mydraw_2d.h"
 
 
 Colormap     cmap;

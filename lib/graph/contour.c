@@ -62,8 +62,8 @@ already checked to
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "newgraph/basicdef.h" /*for typedef int indfn(int,int)*/
-#include "newgraph/contour.h"
+#include "graph/basicdef.h" /*for typedef int indfn(int,int)*/
+#include "graph/contour.h"
 
 #define horizontal 0
 #define vertical 1

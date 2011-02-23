@@ -24,11 +24,11 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <string.h>
 #include <math.h>
 
-#include "newgraph/mypow.h"
-#include "newgraph/mygraph.h"
-#include "newgraph/contour.h"
-#include "newgraph/fftn.h"
-#include "newgraph/analyse.h"
+#include "graph/mypow.h"
+#include "graph/mygraph.h"
+#include "graph/contour.h"
+#include "graph/fftn.h"
+#include "graph/analyse.h"
 
 void savegrdata(grstr graph,char *name,int no,int rough)
 {

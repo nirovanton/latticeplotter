@@ -20,9 +20,9 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 \***************************************************************************/
 
 #include <string.h>
-#include "newgraph/koord.h"
-#include "newgraph/koord2d.h"
-#include "newgraph/mydraw_2d.h"
+#include "graph/koord.h"
+#include "graph/koord2d.h"
+#include "graph/mydraw_2d.h"
 
 
 void zeichneachsex(int c,tic *tics,int ntic,int beschrifte,int textsize,

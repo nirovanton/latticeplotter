@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "newgraph/myrand.h"
+#include "graph/myrand.h"
 
 double myrand(double dummy){
   double res;

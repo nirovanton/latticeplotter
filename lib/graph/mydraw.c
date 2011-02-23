@@ -18,7 +18,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 e-mail: Alexander.Wagner@ndsu.nodak.edu
 \***************************************************************************/
-#include "newgraph/mydraw.h"
+#include "graph/mydraw.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

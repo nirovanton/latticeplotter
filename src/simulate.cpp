@@ -50,6 +50,8 @@ Simulate::Simulate(int argc, char *argv[])
     if (variables.count("help") > 0) throw SimulateArgumentError("", description);
     this->debug = variables.count("debug") > 0;
     this->verbose = variables.count("verbose") > 0;
+    
+#warning Add logic for argv[0] here so we can pick the right view ...
 }
 
 boost::program_options::variables_map Simulate::parseOptions(int argc, char *argv[], boost::program_options::options_description * description)

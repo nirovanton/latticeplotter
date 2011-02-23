@@ -1,6 +1,6 @@
 #include <math.h>
 
-#include "newgraph/fftn.h"
+#include "graph/fftn.h"
 
 #define SWAP(a,b) tempr=(a);(a)=(b);(b)=tempr
 

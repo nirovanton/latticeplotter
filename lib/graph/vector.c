@@ -23,7 +23,7 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "newgraph/vector.h"
+#include "graph/vector.h"
 
 
 /* typedef double *vecp; */
