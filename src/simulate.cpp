@@ -60,6 +60,14 @@ boost::program_options::variables_map Simulate::parseOptions(int argc, char *arg
     ("debug,d", "Turn on the debug flag to have extremely verbose output.")
     ("verbose,v", "Turn on the verbose flag to have more verbose output.")
     ;
+    
+    description->add_options()
+    ("continuous,c", "Enable continous drawing of the plots.")
+    ("next,n", "I have no idea what this could mean except to iterate?")
+    ("repeat,r", "Number of times to repeat?")
+    ;
+    
+#warning Add options here.
 
     variables_map variables;
     store(command_line_parser(argc, argv).options(*description).run(), variables);
