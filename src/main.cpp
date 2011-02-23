@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 #include "simulate.h"
-#include "../include/output.h"
+#include "output.h"
 
 using namespace std;
 
