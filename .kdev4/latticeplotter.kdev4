@@ -1,0 +1,15 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x1c\x00l\x00a\x00t\x00t\x00i\x00c\x00e\x00p\x00l\x00o\x00t\x00t\x00e\x00r)
+
+[CMake]
+BuildDirs=/home/alunduil/programs/latticeplotter/build
+CMakeDir=/usr/share/cmake/Modules
+Current CMake Binary=file:///usr/bin/cmake
+CurrentBuildDir=file:///home/alunduil/programs/latticeplotter/build
+CurrentBuildType=Debug
+CurrentInstallDir=file:///usr/local/
+Extra Arguments=
+ProjectRootRelative=./
+
+[Project]
+VersionControlSupport=kdevgit
