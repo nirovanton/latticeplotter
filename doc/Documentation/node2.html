@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>History</TITLE>
+<META NAME="description" CONTENT="History">
+<META NAME="keywords" CONTENT="Documentation">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Documentation.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="Documentation.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html54"
+  HREF="Documentation.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html48"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html56"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node3.html">So what does it</A>
+<B> Up:</B> <A NAME="tex2html55"
+  HREF="Documentation.html">The graph library: simple</A>
+<B> Previous:</B> <A NAME="tex2html49"
+  HREF="node1.html">Contents</A>
+ &nbsp <B>  <A NAME="tex2html57"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000">
+History</A>
+</H1>
+In my first year as a physics student at Bielefeld
+University in 1992, I met Johannes Schlosser. What began as a study group
+for physics problems soon developed into a great friendship and an
+intense and fruitful collaboration on exploring what computers could
+do.
+
+<P>
+At this time a computer would be in ``text mode'' as standard and only
+for special problems would a ``graphics mode'' be activated. At this
+time only Apple computers broke with this paradigm and Microsoft was
+only a small company making the Microsoft DOS as well as a few text
+programs. A graphics resolution of 600:300 was a great resolution and
+color was a luxury we could not afford. We each bought an 8068 IBM
+compatible computer and began checking out what we could do with
+it. Switching the monochrome Hercules graphics card into graphics mode
+was a major challenge. We started using Turbo Pascal as our
+programming language of choice with a few Assembler inline additions.
+
+<P>
+But seeing the graphics on the screen is rather fleeting, so we
+also wanted to be able to print it. There was the option of a screen
+print, but that meant limiting the print output to the low resolution
+of the screen, even though I had invested in an NEC P6c, a color dot
+printer. So we wanted to make sure that we could print out our
+graphics with maximal resolution and in color on our printer. But how
+can you transfer a picture from the screen to the printer and increase
+the resolution? The solution we found was to have two sets of basic
+graphic routines: one would write to the screen, the other would write
+to a set of memory which was a bitmap of what we would then write to
+the printer. We realized that if you wrote your program so that all
+sizes would be relative to the X and Y dimensions of your medium, they
+would look right, no matter if they would be printed on a screen or
+printed to the printer.
+
+<P>
+On this level, we managed to program a graphical user interface which
+was supposed to be easy to adapt for new programs. If you wanted to
+print something you could use the same routines that you had used to create
+your graphics on the screen. It came as a total revelation to us when,
+a few years later, Peter Seroka introduced us to the X windows system
+common on Unix workstations. Being able to open windows on other
+computers seemed like a little miracle to us. A little earlier Linus
+Torwald had developed the Linux kernel and now the first working
+versions of the Linux operating systems became available and they were
+free! Another revelation there. So with the help of Linux (version
+0.92, I believe) we could transform our computers (80286 IBM
+compatibles at this time) into Unix workstations. 
+
+<P>
+This signaled the change from Pascal to C (which only our friend Tim
+Scheideler was using at the time) and X windows for our graphics
+needs. Previously all printing was different for all printers, but the
+people of Adobe Inc. had developed PostScript, a portable graphics
+language. And with the help of ghostscript you could (and still can)
+print any postscript file on any printer. So we decided to now use
+PostScript files as the output which could then be printed
+<I>everywhere</I>. 
+
+<P>
+At this time both Johannes and myself were working on our
+Diplomarbeit (masters thesis) at Bielefeld University. Not
+surprisingly, we were both doing computational projects and were
+heavily relying on graphical output. At this point we had
+actually developed two separate graphics libraries. Johannes had true
+three-dimensional capabilities whereas I had developed basic menus,
+the printer support, and coordinate systems. Because Johannes was the
+much more organized of the two of us we used the structure of this
+graphics library and added my extensions into his code to create what
+remains to this day the basic foundation of the library: a set of
+basic two dimensional graphics routines which interface either xlib of
+the X windows system or PostScript routines, a library for the
+representation of three dimensional scenarios. This was supported by a
+set of menu functions that dealt with mouse interactions.
+
+<P>
+After we successfully used the graphics libraries for our Diplomarbeit
+Johannes went on to a rapidly advancing career at IBM Deutschland
+whereas I went on to graduate school at Oxford. For my graduate work
+I picked a numerical project again, but this time I dealt with complex
+fluids which needed a number of different representations that our
+graphics library did not yet support. I included support for density
+plots and contour lines, but whenever I wrote a new program I still
+copied lots of old code from the last programs to reuse them in the
+new programs. And then I realized that anytime I copied code from other
+programs, it meant that it should be part of the library and not part
+of the user code. It took quite a few numbers of iterations to reduce
+the amount of code the user had to write to use the graphics code. 
+
+<P>
+In 1998, at the end of my D.Phil.&nbsp;(Ph.D.), I considered briefly
+founding a company for simulating complex fluids and using the
+graphics as a part of this commercial enterprise. But I soon realized
+that my heart was with science and I did not enjoy the prospects of
+meeting with venture capitalists to fund my software company (and that
+was at the beginning of the Internet bubble). Instead, I continued my
+academic career with postdoctoral positions at MIT and Edinburgh
+University. At each of these places I realized that scientists as a
+whole don't tent to have easy access to the data in their computer
+simulations and that the approach I had taken was quite unique.
+
+<P>
+Now I have a faculty position at North Dakota State University and I
+want to give you the ability to steer your computer simulations and to
+monitor them closely. Considering how much Johannes and I have
+benefited from the free software project we have decided to release
+our library under the GNU public license to make sure that it is
+available for free to anyone.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html54"
+  HREF="Documentation.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html48"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html56"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node3.html">So what does it</A>
+<B> Up:</B> <A NAME="tex2html55"
+  HREF="Documentation.html">The graph library: simple</A>
+<B> Previous:</B> <A NAME="tex2html49"
+  HREF="node1.html">Contents</A>
+ &nbsp <B>  <A NAME="tex2html57"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+
+2003-04-23
+</ADDRESS>
+</BODY>
+</HTML>
