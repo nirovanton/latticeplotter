@@ -26,6 +26,8 @@
 #include "baseerror.h"
 #include "baseargumenterror.h"
 
+class SimulateView; //!< Forward declaration for this header file ...
+
 class Simulate
 {
     public:
@@ -57,16 +59,16 @@ class Simulate
         boost::program_options::variables_map parseOptions(int argc, char *argv[], boost::program_options::options_description * description = new boost::program_options::options_description("Options: "));
 };
 
-class ProteusError : public Errors::BaseError
+class SimulateError : public Errors::BaseError
 {
     public:
-        ProteusError(const std::string & msg);
+        SimulateError(const std::string & msg);
 };
 
-class ProteusArgumentError : public Errors::BaseArgumentError
+class SimulateArgumentError : public Errors::BaseArgumentError
 {
     public:
-        ProteusArgumentError(const std::string & msg, const boost::program_options::options_description & description);
+        SimulateArgumentError(const std::string & msg, const boost::program_options::options_description & description);
 };
 
 #endif // SIMULATE_H

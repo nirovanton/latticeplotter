@@ -1,2 +1,2 @@
 # Time for a better library name ...
-include(newgraph)
+add_subdirectory(newgraph)

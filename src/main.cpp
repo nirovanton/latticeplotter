@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     
     try
     {
-        application = new Simluate(argc, argv);
+        application = new Simulate(argc, argv);
         application->Run();
     }
     catch (SimulateArgumentError e)
