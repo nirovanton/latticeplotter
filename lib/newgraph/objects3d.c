@@ -20,8 +20,8 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 \***************************************************************************/
 #include <string.h>
 #include <stdlib.h>
-#include <objects3d.h>
-#include <view3d.h>
+#include "newgraph/objects3d.h"
+#include "newgraph/view3d.h"
 
 #define il(k) {\
  linien[k].type = V3DOBJECT;\

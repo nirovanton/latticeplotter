@@ -1,10 +1,10 @@
 #include <string.h>
-#include <koord.h>
-#include <koord3d.h>
-#include <vector.h>
-#include <view3d.h>
-#include <mydraw.h>
-#include <objects3d.h>
+#include "newgraph/koord.h"
+#include "newgraph/koord3d.h"
+#include "newgraph/vector.h"
+#include "newgraph/view3d.h"
+#include "newgraph/mydraw.h"
+#include "newgraph/objects3d.h"
 
 
 void zeichneachse(int c,tic *tics,int ntic,int beschrifte,double textabstand,

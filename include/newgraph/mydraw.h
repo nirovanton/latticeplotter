@@ -1,9 +1,9 @@
 #ifndef _MYDRAW_H
 #define _MYDRAW_H
 
-#include <view3d.h>
-#include <mydraw_2d.h>
-#include <cobject3d.h>
+#include "view3d.h"
+#include "mydraw_2d.h"
+#include "cobject3d.h"
 #include <stdio.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>

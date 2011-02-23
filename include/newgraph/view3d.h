@@ -1,7 +1,7 @@
 # ifndef _VIEW3D_H
 # define _VIEW3D_H
 
-# include <vector.h>
+# include "vector.h"
 # define xaxis 1
 # define yaxis 2
 # define zaxis 3	

@@ -63,7 +63,7 @@ already checked to
 #include <stdlib.h>
 #include <string.h>
 #include "newgraph/basicdef.h" /*for typedef int indfn(int,int)*/
-#include <contour.h>
+#include "newgraph/contour.h"
 
 #define horizontal 0
 #define vertical 1

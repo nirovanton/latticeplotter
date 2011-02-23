@@ -8,9 +8,9 @@
    Bibliothek. */
 
 
-#include <view3d.h>
-#include <mydraw_2d.h>
-#include <mydraw.h>
+#include "view3d.h"
+#include "mydraw_2d.h"
+#include "mydraw.h"
 #include <stdio.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>

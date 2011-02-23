@@ -22,7 +22,7 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 # include <math.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <view3d.h>
+# include "newgraph/view3d.h"
 
 # define STACKSIZE 100
 

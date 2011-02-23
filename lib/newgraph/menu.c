@@ -198,10 +198,6 @@ void mapwindow(Display *myd,mywindow *mw,int myx, int myy)
     }
   if(mw->type&menutypemask) 
     {
-      /** DEBUGGIN' */
-      printf("defaultfont == NULL ? %d", defaultfont == NULL);
-      printf("lengstr = %s", lengstr);
-
       mw->menumaxx = XTextWidth(defaultfont,longstr,strlen(longstr));
       mw->menumaxy = mw->nomenu*2*(defaultfont->ascent + defaultfont->descent);
       mw->MenuRatio= 1.0*mw->menumaxx/(mw->menumaxx+mw->zeichenmaxx);

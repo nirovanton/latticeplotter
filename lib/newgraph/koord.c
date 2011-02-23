@@ -22,7 +22,7 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
-#include<koord.h>
+#include"newgraph/koord.h"
 #include<limits.h>
 
 static void check(int a, int b){

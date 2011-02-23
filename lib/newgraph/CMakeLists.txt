@@ -19,9 +19,9 @@ add_library(newgraph SHARED
     myrand.c
     neuzeichnen.c
     objects3d.c
-    old_analyse.c
     tfield.c
     ufield.c
     vector.c
     view3d.c
-    )
+)
+target_link_libraries(newgraph X11)
