@@ -1,0 +1,359 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Reference section</TITLE>
+<META NAME="description" CONTENT="Reference section">
+<META NAME="keywords" CONTENT="Documentation">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Documentation.css">
+
+<LINK REL="next" HREF="node9.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="Documentation.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html130"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html126"
+  HREF="Documentation.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html120"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html128"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html131"
+  HREF="node9.html">Does it work with</A>
+<B> Up:</B> <A NAME="tex2html127"
+  HREF="Documentation.html">The graph library: simple</A>
+<B> Previous:</B> <A NAME="tex2html121"
+  HREF="node7.html">Running the program</A>
+ &nbsp <B>  <A NAME="tex2html129"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00060000000000000000">
+Reference section</A>
+</H1>
+In this section you can find the list of all the user commands (and
+some functions that you are less likely to need) that you are going to
+need to visualize and steer you programs. 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="130"></A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+All commands used to register data that you want to
+  visualize</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300>function</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>description</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphN_R(char *Name,double *gd,int *dim,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Simple one dimensional arrays</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphN_RxR(char *Name,double *gd,int *dim,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>One dimensional arrays of points (x,y).</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphN_RxRp(char *Name,double **gd,int *dim,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Pointer to an one dimensional array of points. Needed if the size of
+the data field will be resized with <TT>realloc()</TT>.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphNxN_R(char *Name,double *gd,
+                      int *dim1,int *dim2,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Two dimensional array.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphNxN_RxR(char *Name,double *gd,
+                      int *dim1,int *dim2,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Two dimensional
+array of vectors.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphNxN_RxRxRt(char *Name,double *gd,
+                      int *dim1,int *dim2,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Three
+dimensional field. <I>Still waiting for the implementation of the
+ 3 dimensional contour.</I></TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>DefineGraphContour3d(char *Name,Contour **gd,
+                      int *dim1,int *dim2,int *dim3,int *req)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>A
+special data type to define contour, especially from a parallel program.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>SetDefaultColor(int c)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Default color for graphs
+defined after this command. See Table <A HREF="node8.html#ShapeAndColor">2</A>.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>SetDefaultLineType(int s)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Default line type is 1 (solid
+line). 0 means no line.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>SetDefaultShape(int s)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Default shape according to table 
+<A HREF="node8.html#ShapeAndColor">2</A>.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>SetDefaultSize(double s)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Default size is one.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>SetDefaultFill(int f)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Default fill is off (0).</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>NewGraph()</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Start a new set of graphs.</TD>
+</TR>
+<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=300><TT>SetActiveGraph(int)</TT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=175>Set this before you call 
+<TT>DefineGraph()</TT>.</TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="graphcommands"></A></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="222"></A>
+<TABLE>
+<CAPTION><STRONG>Table 2:</STRONG>
+Shapes and standard colors. <I>Colors will be translated soon.</I></CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="LEFT">Name</TD>
+<TD ALIGN="CENTER">value</TD>
+</TR>
+<TR><TD ALIGN="LEFT">NoShape</TD>
+<TD ALIGN="CENTER">0</TD>
+</TR>
+<TR><TD ALIGN="LEFT">UpTriangle</TD>
+<TD ALIGN="CENTER">1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">DownTriangle</TD>
+<TD ALIGN="CENTER">2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Square</TD>
+<TD ALIGN="CENTER">3</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Circle</TD>
+<TD ALIGN="CENTER">4</TD>
+</TR>
+</TABLE> 
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="LEFT">Color functions</TD>
+<TD ALIGN="LEFT">English</TD>
+</TR>
+<TR><TD ALIGN="LEFT">schwarz()</TD>
+<TD ALIGN="LEFT">black</TD>
+</TR>
+<TR><TD ALIGN="LEFT">weiss()</TD>
+<TD ALIGN="LEFT">white</TD>
+</TR>
+<TR><TD ALIGN="LEFT">rot()</TD>
+<TD ALIGN="LEFT">red</TD>
+</TR>
+<TR><TD ALIGN="LEFT">gruen()</TD>
+<TD ALIGN="LEFT">green</TD>
+</TR>
+<TR><TD ALIGN="LEFT">blau()</TD>
+<TD ALIGN="LEFT">blue</TD>
+</TR>
+<TR><TD ALIGN="LEFT">gelb()</TD>
+<TD ALIGN="LEFT">yellow</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<A NAME="ShapeAndColor"></A></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="179"></A>
+<TABLE>
+<CAPTION><STRONG>Table 3:</STRONG>
+Menu commands</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1">
+Function </FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> description</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+
+<TT>StartMenu(char *Name,int installed)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Start a new menu with
+name <I>Name</I>. It will be visible as you start the program if
+<I>installed</I> is 1 </FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>StartBoolMenu(char *Name,int *b)</TT> </FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> This will also start a
+menu, but the menu is also a Boolean field (see below) with name
+<I>Name</I> and address <I>*b</I>. To change the value of
+<I>b</I> left click the button, to open the menu right click the button.</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>EndMenu()</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1">Each menu has to be terminated by an
+<TT>EndMenu()</TT> command.</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+
+<TT>DefineInt(char *Name,int *myint)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Menu item of type int</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineLong(char *Name,long *myint)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Menu item of type long </FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineMod(char *Name,int *myint,int mod)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Menu item of type
+int. The value is constraint to be between <TT>0</TT> and <TT>mod-1</TT></FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineBool(char *Name,int *myint)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Integer that can only take
+the values 0 and 1. In the menu this is represented as ``off'' and ``on''
+respectively. </FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineDouble(char *Name,double *mydouble)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Menu item of type double</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineFloat(char *Name,float *myfloat)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Menu item of type float</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineString(char *Name,char *s,int maxlen)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1">Menu item
+for a string with maximum length maxlen. <I>There is a bug that
+  still allows you to write strings longer than maxlen</I>. </FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+
+<TT>DefineFunction(char *Name,fp myfp)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> This function allows you
+to call a function. This function may not have an argument.</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1">  
+<TT>DefineItem(int vartype)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> This is a function to add special
+items like the print button (<TT>print_</TT> and <TT>dopint_</TT>),
+a close button (<TT>close_</TT>) or a Redraw button
+(<TT>newdraw_</TT>). You will probably not need to use these except
+  maybe the <TT>close_</TT> option.</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="-1"> 
+<TT>DefineGraph(int vartype, char *Name)</TT></FONT></TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=142><FONT SIZE="-1"> Adding buttons for
+different kinds of graphics with arguments given by table <A HREF="node8.html#graphtable">5</A>.</FONT></TD>
+</TR>
+</TABLE></DIV>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="225"></A>
+<TABLE>
+<CAPTION><STRONG>Table 4:</STRONG>
+Different options for the <TT>DefineGraph()</TT> routine.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="CENTER">numerical value</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=198>description</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT>curve2d_</TT></TD>
+<TD ALIGN="CENTER">11</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=198>displays <TT>N_R,N_RxR</TT>, and
+                          <TT>N_RxRp</TT> data types as two
+			  dimensional curves.</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT>contour2d_</TT></TD>
+<TD ALIGN="CENTER">9</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=198>displays <TT>NxN_R</TT> data types as
+                          density and contour plots and
+			  <TT>NxN_RxR</TT> data types as vector plots.</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT>graph2d_</TT></TD>
+<TD ALIGN="CENTER">8</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=198>displays <TT>NxN_R</TT> data types as three
+                          dimensional graphs.</TD>
+</TR>
+<TR><TD ALIGN="LEFT"><TT>contour3d_</TT></TD>
+<TD ALIGN="CENTER">10</TD>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=198>displays <TT>NxNxN_R</TT> data types as
+                          three dimensional contour plots. <I>Not
+			    yet fully implemented.</I></TD>
+</TR>
+</TABLE>
+</DIV>
+<A NAME="graphtable"></A></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html130"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html126"
+  HREF="Documentation.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html120"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html128"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html131"
+  HREF="node9.html">Does it work with</A>
+<B> Up:</B> <A NAME="tex2html127"
+  HREF="Documentation.html">The graph library: simple</A>
+<B> Previous:</B> <A NAME="tex2html121"
+  HREF="node7.html">Running the program</A>
+ &nbsp <B>  <A NAME="tex2html129"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+
+2003-04-23
+</ADDRESS>
+</BODY>
+</HTML>

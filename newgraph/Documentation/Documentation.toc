@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}History}{3}
+\contentsline {section}{\numberline {2}So what does it do?}{4}
+\contentsline {section}{\numberline {3}Scientific Visualization}{5}
+\contentsline {section}{\numberline {4}Examples}{5}
+\contentsline {subsection}{\numberline {4.1}Compiling the program}{11}
+\contentsline {subsection}{\numberline {4.2}Running the program}{12}
+\contentsline {section}{\numberline {5}Reference section}{13}
+\contentsline {section}{\numberline {6}Does it work with other programming languages?}{13}
+\contentsline {section}{\numberline {A}Installing the library}{13}
+\contentsline {section}{\numberline {B}The lattice Boltzmann algorithm}{13}

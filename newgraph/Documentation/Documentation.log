@@ -1,0 +1,154 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2003.9.3)  4 OCT 2003 12:25
+**\nonstopmode\input Documentation.tex
+(./Documentation.tex (/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (./Documentation.aux)
+\openout1 = `Documentation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+ [1
+
+]
+(./Documentation.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+)
+\tf@toc=\write3
+\openout3 = `Documentation.toc'.
+
+ [2] [3] [4]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 175.
+ [5] [6] [7] [8] [9] [10] [11]
+File: screen1.eps Graphic file (type eps)
+ <screen1.eps>
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 580--580
+[]\OT1/cmtt/m/n/12 DefineGraphN[]R(char *Name,double *gd,int
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
+[]\OT1/cmtt/m/n/12 DefineGraphN[]RxR(char *Name,double *gd,int
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 583--584
+[]\OT1/cmr/m/n/12 One di-men-sional ar-rays of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--584
+[]\OT1/cmtt/m/n/12 DefineGraphN[]RxRp(char *Name,double
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 588--588
+[]\OT1/cmtt/m/n/12 DefineGraphNxN[]R(char *Name,double *gd, int
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--590
+[]\OT1/cmtt/m/n/12 DefineGraphNxN[]RxR(char *Name,double *gd,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]\OT1/cmtt/m/n/12 DefineGraphNxN[]RxRxRt(char *Name,double
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--597
+[]\OT1/cmtt/m/n/12 DefineGraphContour3d(char *Name,Contour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--597
+\OT1/cmtt/m/n/12 **gd, int *dim1,int *dim2,int *dim3,int
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
+[]\OT1/cmr/m/n/12 Set this be-fore you call
+ []
+
+
+Overfull \hbox (1.66017pt too wide) in paragraph at lines 576--616
+ [] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 656.
+
+Underfull \hbox (badness 10000) in paragraph at lines 679--682
+\OT1/cmr/m/n/10.95 max-i-mum length maxlen.
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 679--682
+\OT1/cmr/m/it/10.95 There is a bug that still
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 679--682
+\OT1/cmr/m/it/10.95 al-lows you to write strings
+ []
+
+[13] [14] [15] [16] [17] (./Documentation.aux) ) 
+Here is how much of TeX's memory you used:
+ 478 strings out of 95870
+ 5338 string characters out of 1196420
+ 63488 words of memory out of 1000001
+ 3449 multiletter control sequences out of 10000+50000
+ 10922 words of font info for 39 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 23i,10n,19p,331b,410s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on Documentation.dvi (17 pages, 43848 bytes).

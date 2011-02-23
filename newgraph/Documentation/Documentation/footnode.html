@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Footnotes</TITLE>
+<META NAME="description" CONTENT="Footnotes">
+<META NAME="keywords" CONTENT="Documentation">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Documentation.css">
+
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="Documentation.html">
+</HEAD>
+
+<BODY >
+
+<DL>
+<DT><A NAME="foot211">... program</A><A NAME="foot211"
+ HREF="node5.html#tex2html1"><SUP>1</SUP></A>
+<DD>This program is included as
+<TT>prog1.c</TT> in this distribution.
+<PRE>.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</PRE>
+<DT><A NAME="foot212">...
+(GUI),</A><A NAME="foot212"
+ HREF="node5.html#tex2html2"><SUP>2</SUP></A>
+<DD>This program is distributed as <TT>prog2.c</TT> with
+  this distribution.
+<PRE>.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</PRE>
+<DT><A NAME="foot216">...curve2d_.</A><A NAME="foot216"
+ HREF="node5.html#tex2html3"><SUP>3</SUP></A>
+<DD>There are several other types corresponding
+  to two-dimensional density and vector plots, three-dimensional graph
+  representations, three-dimensional contour plots, etc. This is
+  discussed in section <A HREF="#graphs"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.png"></A>.
+<PRE>.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</PRE>
+<DT><A NAME="foot217">...Events()</A><A NAME="foot217"
+ HREF="node5.html#tex2html4"><SUP>4</SUP></A>
+<DD>Whenever there are new data the argument of 
+          <TT>Events()</TT> should be nonzero. This will set the
+          requests for data so that you can calculate them
+          on demand only. For this simple program you can
+          always set it to one.
+<PRE>.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</PRE>
+<DT><A NAME="foot218">...
+displayed.</A><A NAME="foot218"
+ HREF="node5.html#tex2html5"><SUP>5</SUP></A>
+<DD>But why is this not simply part of the <TT>Events()</TT>
+function? The reason lies in the following consideration: often there
+are quantities that you want to monitor, but that are not actually
+required for the computation. Having two routines allows you to
+calculate only when they are needed. This is the reason that each data
+is associated with a request flag. If the user chose to observe this
+data, the request flag would be set in the <TT>Events()</TT>
+routine and you could write a routine that would calculate this data
+before you called the <TT>DrawGraphs();</TT> routine.
+<PRE>.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+</PRE>
+</DL>
+</BODY>
+</HTML>

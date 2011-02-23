@@ -1,0 +1,127 @@
+CC            = cc
+
+#CFLAGS	      =  -Wall -O3 -I. -std=c99
+CFLAGS	      =  -Wall -g -I. -std=c99
+
+LDFLAGS	      = 
+
+DEST	      = .
+
+MYLIB         = graph
+
+LIBDIR	      = $(HOME)/lib
+
+INCDIR	      = $(HOME)/include
+
+MYHEAD	      = mygraph.h basicdef.h graph.h menu.h mydraw.h view3d.h\
+		mydraw_2d.h cobject3d.h vector.h myrand.h\
+		neuzeichnen.h color.h contour.h analyse.h
+
+EXTHDRS	      =
+
+HDRS	      =	mygraph.h graph.h draw3dgraph.h draw3dcontour.h draw2dgraph.h \
+		ufield.h tfield.h menu.h contour.h\
+		neuzeichen.h objects3d.h cobject3d.h\
+                koord.h koord3d.h koord2d.h mydraw.h\
+		view3d.h adrini.h walls.h ran2.h\
+		myrand.h color.h
+
+INSTALL	      = cp
+
+LD	      = cc
+
+AR            = ar
+
+LIBS	      =  -L/usr/X11R6/lib -L. -l$(MYLIB) -lm -lX11
+
+MAKEFILE      = Makefile
+
+LIBOBJS	      = mygraph.o graph.o draw3dgraph.o draw3dcontour.o draw2dgraph.o\
+		ufield.o tfield.o menu.o contour.o\
+		neuzeichnen.o koord.o koord3d.o koord2d.o mydraw.o \
+		mydraw_2d.o objects3d.o cobject3d.o\
+		vector.o view3d.o myrand.o color.o analyse.o fftn.o
+
+MAINOBJ	      = myprog.o
+
+OBJS	      = $(LIBOBJS) $(MAINOBJ)
+
+PRINT	      = a2ps -nn -nw -ns
+
+PROGRAM       = Graph3d.out
+
+SHELL	      = /bin/sh
+
+SRCS	      = mygraph.c graph.c contour.c menu.c\
+		draw3dgraph.c draw3dcontour.o draw2dgraph.c\
+		neuzeichnen.c koord.c koord3d.c koord2d.c mydraw.c \
+		mydraw_2d.c objects3d.c cobject3d.c\
+		vector.c view3d.c \
+		myprog.c myrand.c color.c
+
+SYSHDRS	      = /usr/include/math.h \
+		/usr/include/stdio.h \
+		/usr/include/stdlib.h \
+		/usr/include/string.h \
+		/usr/include/sys/errno.h
+
+all:		$(PROGRAM)
+
+$(PROGRAM):     $(OBJS)
+		@$(AR) rc lib$(MYLIB).a $(LIBOBJS) 
+		@echo $(AR) rc lib$(MYLIB).a $(LIBOBJS) 
+		@echo "Linking $(PROGRAM) ..."
+		@echo $(LD)  $(MAINOBJ) $(LIBS) -o $(PROGRAM)
+		@$(LD) $(LDFLAGS) $(MAINOBJ) $(LIBS) -o $(PROGRAM)
+		@echo "done"
+
+clean:;		@rm -f $(OBJS) rm lib$(MYLIB).a core
+
+clobber:;	@rm -f $(OBJS) $(PROGRAM) tags
+
+depend:;	@mkmf -f $(MAKEFILE) ROOT=$(ROOT)
+
+echo:;		@echo $(HDRS) $(SRCS)
+
+index:;		@ctags -wx $(HDRS) $(SRCS)
+
+install:	$(PROGRAM)
+		@echo Installing lib$(MYLIB).a in $(LIBDIR)
+		@echo Installing $(MYHEAD) in $(INCDIR)
+		@-strip $(PROGRAM)
+		@if [ $(LIBDIR) != . ]; then \
+		  (rm -f $(LIBDIR)/$(MYLIB);\
+		  if test ! -d $(LIBDIR); then mkdir $(LIBDIR); fi;\
+		  if test ! -d $(INCDIR); then mkdir $(INCDIR); fi;\
+		  $(INSTALL) -f lib$(MYLIB).a $(LIBDIR);\
+		  $(INSTALL) -f $(MYHEAD) $(INCDIR));\
+		fi
+
+print:;		@$(PRINT) $(HDRS) $(SRCS)
+
+tags:           $(HDRS) $(SRCS); @ctags $(HDRS) $(SRCS)
+
+update:		$(DEST)/$(PROGRAM)
+
+###
+mygraph.o 	: basicdef.h mygraph.h graph.h neuzeichnen.h menu.h graph.h\
+		  color.h
+neuzeichnen.c   : basicdef.h neuzeichnen.h graph.h
+draw3dgraph.o 	: draw3dgraph.h view3d.h mydraw.h koord3d.h objects3d.h\
+		  mygraph.h graph.h
+draw3dcontour.o : draw3dcontour.h view3d.h mydraw.h koord3d.h objects3d.h\
+		  mygraph.h graph.h
+draw2dgraph.o 	: draw2dgraph.h mydraw.h koord2d.h  mygraph.h graph.h
+ufield.o	: ufield.h graph.h
+menu.o 		: basicdef.h menu.h graph.h
+contour.o	: contour.h
+mydraw_2d.o	: mydraw_2d.h
+mydraw.o   	: mydraw.h
+objects3d.o	: mydraw_2d.h mydraw.h objects3d.h view3d.h
+cobject3d.o     : mydraw_2d.h mydraw.h cobject3d.h view3d.h
+view3d.o   	: view3d.h
+koord.o		: koord.h
+koord3d.o	: koord.h koord3d.h vector.h view3d.h mydraw.h objects3d.h
+myrand.o   	: myrand.h
+
+
