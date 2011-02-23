@@ -20,7 +20,7 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 \***************************************************************************/
 
 
-#include "mydraw_2d.h"
+#include "newgraph/mydraw_2d.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

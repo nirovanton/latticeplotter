@@ -62,7 +62,7 @@ already checked to
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "basicdef.h" /*for typedef int indfn(int,int)*/
+#include "newgraph/basicdef.h" /*for typedef int indfn(int,int)*/
 #include <contour.h>
 
 #define horizontal 0

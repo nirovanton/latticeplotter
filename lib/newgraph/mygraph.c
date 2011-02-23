@@ -30,9 +30,9 @@ e-mail: Alexander.Wagner@ndsu.edu
 #include <X11/keysym.h>
 #include <X11/keysymdef.h>
 
-#include "mygraph.h"
-#include "menu.h"
-#include "neuzeichnen.h"
+#include "newgraph/mygraph.h"
+#include "newgraph/menu.h"
+#include "newgraph/neuzeichnen.h"
 
 /*static char initload[200];*/
 

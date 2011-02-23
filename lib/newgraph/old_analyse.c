@@ -3,11 +3,11 @@
 #include <string.h>
 #include <math.h>
 
-#include "mypow.h"
-#include "mygraph.h"
-#include "contour.h"
-#include "fftn.h"
-#include "analyse.h"
+#include "newgraph/mypow.h"
+#include "newgraph/mygraph.h"
+#include "newgraph/contour.h"
+#include "newgraph/fftn.h"
+#include "newgraph/analyse.h"
 
 void savegrdata(grstr graph,char *name,int no,int rough)
 {

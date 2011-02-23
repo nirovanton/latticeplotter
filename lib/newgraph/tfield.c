@@ -20,8 +20,8 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 \***************************************************************************/
 
 #include <math.h>
-#include "mydraw_2d.h"
-#include "tfield.h"
+#include "newgraph/mydraw_2d.h"
+#include "newgraph/tfield.h"
 
 void tfield(int anzy,int xmin, int xmax, int ymin, int ymax,
 	    double *t,double scale,

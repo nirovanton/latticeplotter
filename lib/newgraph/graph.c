@@ -23,8 +23,8 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <stdlib.h>
 #include <string.h>
 
-#include "graph.h"
-#include "mygraph.h"
+#include "newgraph/graph.h"
+#include "newgraph/mygraph.h"
 
 grstr *graph=NULL;
 int graphactive;

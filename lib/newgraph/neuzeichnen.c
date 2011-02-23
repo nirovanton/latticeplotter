@@ -24,18 +24,18 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <math.h>
 #include <string.h>
 
-#include "mypow.h"
-#include "mydraw.h"
-#include "mygraph.h"
-#include "cobject3d.h"
-#include "koord2d.h"
-#include "draw2dgraph.h"
-#include "draw3dgraph.h"
-#include "draw3dcontour.h"
-#include "ufield.h"
-#include "tfield.h"
-#include "contour.h"
-#include "neuzeichnen.h"
+#include "newgraph/mypow.h"
+#include "newgraph/mydraw.h"
+#include "newgraph/mygraph.h"
+#include "newgraph/cobject3d.h"
+#include "newgraph/koord2d.h"
+#include "newgraph/draw2dgraph.h"
+#include "newgraph/draw3dgraph.h"
+#include "newgraph/draw3dcontour.h"
+#include "newgraph/ufield.h"
+#include "newgraph/tfield.h"
+#include "newgraph/contour.h"
+#include "newgraph/neuzeichnen.h"
 
 static char *UserComment=NULL;
 

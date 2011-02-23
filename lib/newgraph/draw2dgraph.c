@@ -22,11 +22,11 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <math.h>
 #include <X11/Xlib.h>
 
-#include "mydraw_2d.h"
-#include "koord2d.h"
-#include "mygraph.h"
-#include "draw2dgraph.h"
-#include "graph.h"
+#include "newgraph/mydraw_2d.h"
+#include "newgraph/koord2d.h"
+#include "newgraph/mygraph.h"
+#include "newgraph/draw2dgraph.h"
+#include "newgraph/graph.h"
 
 void DrawUpTriangles(int mycolor, XPoint *myp, int no, double size,int fill){
   int i;

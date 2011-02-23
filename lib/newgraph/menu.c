@@ -43,10 +43,10 @@ e-mail: Alexander.Wagner@ndsu.nodak.edu
 #include <string.h>
 #include <math.h>
 #include <ctype.h>
-#include "neuzeichnen.h" /* for neuzeichnen information */
-#include "mygraph.h"
-#include "draw2dgraph.h"
-#include "menu.h"
+#include "newgraph/neuzeichnen.h" /* for neuzeichnen information */
+#include "newgraph/mygraph.h"
+#include "newgraph/draw2dgraph.h"
+#include "newgraph/menu.h"
 
 static int optlen=10;
 
