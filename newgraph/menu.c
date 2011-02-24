@@ -198,10 +198,6 @@ void mapwindow(Display *myd,mywindow *mw,int myx, int myy)
     }
   if(mw->type&menutypemask) 
     {
-      /** DEBUGGIN' */
-      printf("defaultfont == NULL ? %d", defaultfont == NULL);
-      printf("lengstr = %s", lengstr);
-
       mw->menumaxx = XTextWidth(defaultfont,longstr,strlen(longstr));
       mw->menumaxy = mw->nomenu*2*(defaultfont->ascent + defaultfont->descent);
       mw->MenuRatio= 1.0*mw->menumaxx/(mw->menumaxx+mw->zeichenmaxx);
@@ -219,10 +215,6 @@ void mapwindow(Display *myd,mywindow *mw,int myx, int myy)
   /*           This is rediculous. I need to find an X-manual        */
   /*           to place to windows!                                  */
   /*                  DONE                                           */
-  /* TODO Find a better and modern widget set rather than sit in the */
-  /* darkness of stupidity!  This is shittastic and segfaults on this*/
-  /* line: 
-  /* mw->menumaxx = XTextWidth(defaultfont,longstr,strlen(longstr)); */
   /*******************************************************************/
 
   myhint.x=myx;
